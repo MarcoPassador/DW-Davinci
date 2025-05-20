@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+  
+  header img {
+    width: 200px;
+    margin-left: 20px;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3%;
+    width: 100%;
+    font-size: 25px;
+    padding: 15px;
+  }
+  
+  header nav ul a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header nav ul a:hover {
+    color: #00027c;
+  }
+  
+  .banner {
+    background-image: url("./images/banner.jpg");
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: end;
+  }
+  
+  .banner div {
+    padding: 30px;
+  }
+  
+  .banner h1 {
+    font-size: 70px;
+    text-shadow: 2px 2px 6px white;
+  }
+  
+  .banner p {
+    font-size: 30px;
+    width: 54%;
+    text-shadow: 2px 2px 6px white;
+  }
+  
+  .sinopsisContainer {
+    padding: 15px;
+    background-color: #18181b;
+    color: white;
+    text-align: center;
+  }
+  
+  .sinopsisContainer h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .sinopsisContainer p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sinopsisContainer img {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .repartoContainer {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  .repartoContainer h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .repartoActores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .repartoDiv {
+    flex: 0 1 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    width: 250px;
+  }
+  
+  .repartoDiv img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .repartoDiv p {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .galeriaContainer {
+    padding: 15px;
+    background-color: #18181b;
+    color: white;
+    text-align: center;
+  }
+  
+  .galeriaContainer h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .galeriaContainer img {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+  }
+  
+  .produccionContainer {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  .produccionContainer img {
+    width: 500px;
+    object-fit: cover;
+  }
+  
+  .produccionContainer h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .produccionContainer p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #18181b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
