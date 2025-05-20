@@ -16,9 +16,3 @@ Este proyecto fue desarrollado como parte de la materia **Introducción a la Pro
 
 - **HTML5**: Estructura básica de la página.
 - **CSS3**: Estilos para la presentación visual de la página.
-
-## Instalación
-
-1. Clona este repositorio en tu máquina local usando Git:
-   ```bash
-   git clone https://github.com/usuario/nueva-serie-eternauta.git
