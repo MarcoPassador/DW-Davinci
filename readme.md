@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto fue desarrollado como parte de la materia **Introducción a la Programación**. El objetivo fue crear una página web para promocionar la **nueva serie** de *El Eternauta*, una famosa historieta argentina escrita por Héctor Germán Oesterheld y dibujada por Francisco Solano López. La serie ha sido adaptada recientemente a formato televisivo, y esta página busca ofrecer información sobre los personajes, episodios y detalles de la producción.
+Este proyecto fue desarrollado como parte de la materia **Programación Web I**. El objetivo fue crear una página web para promocionar la **nueva serie** de *El Eternauta*, una famosa historieta argentina escrita por Héctor Germán Oesterheld y dibujada por Francisco Solano López. La serie ha sido adaptada recientemente a formato televisivo, y esta página busca ofrecer información sobre los personajes, episodios y detalles de la producción.
 
 ## Funcionalidades
 
