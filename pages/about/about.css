@@ -34,6 +34,11 @@
   .rowSection div img {
     width: 400px;
     height: auto;
+    transition: transform 0.4s ease;
+  }
+
+  .rowSection div img:hover {
+    transform: scale(1.03);
   }
   
   .reverseSection {
@@ -68,5 +73,10 @@
   .reverseSection div img {
     width: 400px;
     height: auto;
+    transition: transform 0.4s ease;
+  }
+
+  .reverseSection div img:hover {
+    transform: scale(1.03);
   }
   

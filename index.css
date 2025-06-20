@@ -1,186 +1,268 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
-  }
-  
-  header {
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    height: 100px;
-  }
-  
-  header img {
-    width: 200px;
-    margin-left: 20px;
-  }
-  
-  header nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  
-  header nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 3%;
-    width: 100%;
-    font-size: 25px;
-    padding: 15px;
-  }
-  
-  header nav ul a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  header nav ul a:hover {
-    color: #00027c;
-  }
-  
-  .banner {
-    background-image: url("./images/banner.jpg");
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    align-items: end;
-  }
-  
-  .banner div {
-    padding: 30px;
-  }
-  
-  .banner h1 {
-    font-size: 70px;
-    text-shadow: 2px 2px 6px white;
-  }
-  
-  .banner p {
-    font-size: 30px;
-    width: 54%;
-    text-shadow: 2px 2px 6px white;
-  }
-  
-  .sinopsisContainer {
-    padding: 15px;
-    background-color: #18181b;
-    color: white;
-    text-align: center;
-  }
-  
-  .sinopsisContainer h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .sinopsisContainer p {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .sinopsisContainer img {
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .repartoContainer {
-    padding: 15px;
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-  
-  .repartoContainer h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .repartoActores {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .repartoDiv {
-    flex: 0 1 calc(33.33% - 40px);
-    max-width: calc(33.33% - 40px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 20px;
-    width: 250px;
-  }
-  
-  .repartoDiv img {
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .repartoDiv p {
-    font-size: 20px;
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .galeriaContainer {
-    padding: 15px;
-    background-color: #18181b;
-    color: white;
-    text-align: center;
-  }
-  
-  .galeriaContainer h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .galeriaContainer img {
-    width: 550px;
-    height: 550px;
-    object-fit: cover;
-  }
-  
-  .produccionContainer {
-    padding: 15px;
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-  
-  .produccionContainer img {
-    width: 500px;
-    object-fit: cover;
-  }
-  
-  .produccionContainer h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .produccionContainer p {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  footer {
-    background-color: #18181b;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
+.banner {
+  background-image: url("./images/banner.jpg");
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  align-items: end;
+}
+
+.banner div {
+  padding: 30px;
+}
+
+.banner h1 {
+  font-size: 70px;
+  text-shadow: 2px 2px 6px white;
+}
+
+.banner p {
+  font-size: 30px;
+  width: 54%;
+  text-shadow: 2px 2px 6px white;
+}
+
+.sinopsisContainer {
+  padding: 15px;
+  background-color: #18181b;
+  color: white;
+  text-align: center;
+}
+
+.sinopsisContainer h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.sinopsisContainer p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sinopsisContainer img {
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.sinopsisContainer img:hover {
+  transform: scale(1.03);
+}
+
+.repartoContainer {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.repartoContainer h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.repartoActores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.repartoDiv {
+  flex: 0 1 calc(33.33% - 40px);
+  max-width: calc(33.33% - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.repartoDiv:hover {
+  transform: scale(1.05);
+}
+
+.repartoDiv img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.repartoDiv p {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.galeriaContainer {
+  padding: 15px;
+  background-color: #18181b;
+  color: white;
+  text-align: center;
+}
+
+.galeriaContainer h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.galeriaContainer img {
+  width: 550px;
+  height: 550px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  margin: 10px;
+}
+
+.galeriaContainer img:hover {
+  transform: scale(1.03);
+}
+
+.produccionContainer {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.produccionContainer img {
+  width: 500px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.produccionContainer img:hover {
+  transform: scale(1.03);
+}
+
+.produccionContainer h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.produccionContainer p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.produccionContainer div p {
+  margin-bottom: 0;
+}
+
+.formularioContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: left;
+}
+
+.formSection label {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.formSection input,
+.formSection textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.formSection input:focus,
+.formSection textarea:focus {
+  outline: 2px solid rgb(17, 0, 255);
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 12px 25px;
+  background-color: #00027c;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  transform: scale(1.05);
+}
+
+.botonTrailer {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px 20px;
+  background-color: #00027c;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.botonTrailer:hover {
+  transform: scale(1.05);
+}
+
+.overlayTrailer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#toggleTrailerModal:checked + .botonTrailer + .overlayTrailer {
+  display: flex;
+}
+
+.contenedorTrailer {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+}
+
+.contenedorTrailer iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+}
+
+.cerrarTrailer {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
