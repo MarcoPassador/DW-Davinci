@@ -16,19 +16,24 @@
   </head>
   <body>
     <header>
-      <div>
-        <img src="./images/logo.png" alt="logo eternauta" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#sinopsis">SINOPSIS</a></li>
-          <li><a href="#reparto">REPARTO</a></li>
-          <li><a href="#galeria">GALERIA</a></li>
-          <li><a href="#produccion">PRODUCCION</a></li>
-          <li><a href="./pages/about/about.html" target="_blank">¿QUE ES EL ETERNAUTA?</a></li>
-        </ul>
-      </nav>
-    </header>
+  <div>
+    <img src="./images/logo.png" alt="logo eternauta" />
+  </div>
+
+  <input type="checkbox" id="menu-toggle" hidden />
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#sinopsis">SINOPSIS</a></li>
+      <li><a href="#reparto">REPARTO</a></li>
+      <li><a href="#galeria">GALERIA</a></li>
+      <li><a href="#produccion">PRODUCCION</a></li>
+      <li><a href="./pages/about/about.html" target="_blank">¿QUÉ ES EL ETERNAUTA?</a></li>
+    </ul>
+  </nav>
+</header>
+
     <main>
       <section class="banner">
         <div>
@@ -167,7 +172,7 @@
     <input type="checkbox" id="toggleTrailerModal" hidden />
 
     <label for="toggleTrailerModal" class="botonTrailer">
-      ▶ Ver tráiler
+      ▶ <span>Ver tráiler</span>
     </label>
 
     <div class="overlayTrailer">

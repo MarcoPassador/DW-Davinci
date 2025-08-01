@@ -1,82 +1,89 @@
 .rowSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
-    background-color: #18181b;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-  
-  .rowSection h1 {
-    font-size: 70px;
-    margin-bottom: 20px;
-  }
-  
-  .rowSection h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .rowSection div {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .rowSection div p {
-    font-size: 20px;
-    text-align: justify;
-  }
-  
-  .rowSection div img {
-    width: 400px;
-    height: auto;
-    transition: transform 0.4s ease;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #18181b;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
 
-  .rowSection div img:hover {
-    transform: scale(1.03);
-  }
-  
-  .reverseSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-  }
-  
-  .reverseSection h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  
+.rowSection h1 {
+  font-size: clamp(2rem, 6vw, 4.375rem);
+  margin-bottom: 20px;
+}
+
+.rowSection h2 {
+  font-size: clamp(2rem, 6vw, 4.375rem);
+  margin-bottom: 20px;
+}
+
+.rowSection div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rowSection div p {
+  font-size: clamp(14px, 1.2vw, 20px);
+  text-align: justify;
+}
+
+.rowSection div img {
+  width: 40vw;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.rowSection div img:hover {
+  transform: scale(1.03);
+}
+
+.reverseSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.reverseSection h2 {
+  font-size: clamp(2rem, 6vw, 4.375rem);
+  margin-bottom: 20px;
+}
+
+.reverseSection div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+.reverseSection div p {
+  font-size: clamp(14px, 1.2vw, 20px);
+  text-align: justify;
+}
+
+.reverseSection div img {
+  width: 40vw;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.reverseSection div img:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 768px) {
+  .rowSection div,
   .reverseSection div {
-    display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
   }
-  
-  .reverseSection div p {
-    font-size: 20px;
-    text-align: justify;
-  }
-  
-  .reverseSection div img {
-    width: 400px;
-    height: auto;
-    transition: transform 0.4s ease;
-  }
-
-  .reverseSection div img:hover {
-    transform: scale(1.03);
-  }
-  
+}
